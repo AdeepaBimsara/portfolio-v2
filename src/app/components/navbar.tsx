@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <nav className="bg-transparent">
       <div className="flex items-center justify-between py-5">
@@ -10,7 +10,7 @@ const Navbar = () => {
             href="/"
             className="text-3xl font-bold text-[#16f2b3]"
           >
-            ADEEPA BIMSARA
+             AYB
           </Link>
         </div>
 
