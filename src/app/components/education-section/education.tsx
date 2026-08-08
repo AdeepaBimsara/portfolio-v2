@@ -1,13 +1,14 @@
-import { experiences } from "../../utils/data/experience";
+import { educations } from "../../utils/data/education";
 import Image from "next/image";
 import { BsPersonWorkspace } from "react-icons/bs";
-import experience from '../../assets/lottie/code.json';
+import lottieFile from '../../assets/lottie/study.json';
 import AnimationLottie from "../helper/animation-lottie";
 import GlowCard from "../helper/glow-card";
 
-export const Experience = () => {
-  return (
-      <div id="experience" className="relative z-0 border-t my-12 lg:my-24 border-[#25213b]">
+export const Education = () => {
+
+    return (
+         <div id="education" className="relative z-0 border-t my-12 lg:my-24 border-[#25213b]">
       <Image
         src="/section.svg"
         alt="Hero"
@@ -16,12 +17,17 @@ export const Experience = () => {
         className="absolute top-0 -z-10"
         priority
       />
+      <div className="flex justify-center -translate-y-px">
+        <div className="w-3/4">
+          <div className="h-px bg-linear-to-r from-transparent via-violet-500 to-transparent  w-full" />
+        </div>
+      </div>
 
       <div className="flex justify-center my-5 lg:py-8">
         <div className="flex  items-center">
           <span className="w-24 h-0.5 bg-[#1a1443]"></span>
           <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-            Experiences
+            Educations
           </span>
           <span className="w-24 h-0.5 bg-[#1a1443]"></span>
         </div>
@@ -30,17 +36,17 @@ export const Experience = () => {
       <div className="py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           <div className="flex justify-center items-start">
-            <div className="w-full h-full">
-              <AnimationLottie animationPath={experience} />
+            <div className="w-3/4 h-3/4">
+              <AnimationLottie animationPath={lottieFile} />
             </div>
           </div>
 
           <div>
             <div className="flex flex-col gap-6">
               {
-                experiences.map(experience => (
-                  <GlowCard key={experience.id} identifier={`experience-${experience.id}`}>
-                    <div className="p-3 relative">
+                educations.map(education => (
+                  <GlowCard key={education.id} identifier={`education-${education.id}`}>
+                    <div className="p-3 relative text-white">
                       <Image
                         src="/blur-23.svg"
                         alt="Hero"
@@ -50,7 +56,7 @@ export const Experience = () => {
                       />
                       <div className="flex justify-center">
                         <p className="text-xs sm:text-sm text-[#16f2b3]">
-                          {experience.duration}
+                          {education.duration}
                         </p>
                       </div>
                       <div className="flex items-center gap-x-8 px-3 py-5">
@@ -59,13 +65,14 @@ export const Experience = () => {
                         </div>
                         <div>
                           <p className="text-base sm:text-xl mb-2 font-medium uppercase">
-                            {experience.title}
+                            {education.title}
                           </p>
-                          <p className="text-sm sm:text-base">
-                            {experience.company}
-                          </p>
+                          <p className="text-sm sm:text-base">{education.institution}</p>
                         </div>
                       </div>
+                       <div>
+                          <p className="text-sm sm:text-base ">{education.description}</p>
+                        </div>
                     </div>
                   </GlowCard>
                 ))
@@ -75,7 +82,5 @@ export const Experience = () => {
         </div>
       </div>
     </div>
-  )
+    )
 }
-
-export default Experience

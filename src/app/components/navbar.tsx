@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <nav className="bg-transparent">
-      <div className="flex items-center justify-between py-5">
+    <nav className="fixed top-0 left-0 z-50 w-full border-b border-[#1d293a]/50 bg-black/30 backdrop-blur-md">
+      <div className="mx-auto flex h-17 max-w-7xl items-center justify-between px-6">
         {/* Logo */}
         <div className="flex shrink-0 items-center">
           <Link

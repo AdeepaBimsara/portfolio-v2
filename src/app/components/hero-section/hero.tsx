@@ -12,7 +12,7 @@ import { TypeAnimation } from "react-type-animation";
 
 export const Hero = () => {
   return (
-    <section className="relative overflow-hidden py-10 lg:py-20">
+    <section className="relative overflow-hidden py-10 lg:py-30">
        <Image
         src="/hero.svg"
         alt="Hero"
