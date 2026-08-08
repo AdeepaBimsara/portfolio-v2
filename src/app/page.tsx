@@ -2,6 +2,7 @@ import Image from "next/image";
 import Hero from "./components/hero-section/hero";
 import About from "./components/about-section/about";
 import Experience from "./components/experience-section/Experience";
+import Skills from "./components/skill-section/skills";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
        <Hero/>
        <About/>
        <Experience/>
+       <Skills/>
 
     </div>
      
