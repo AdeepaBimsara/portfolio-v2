@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import ScrollTop from "./components/helper/scroll-top";
+import Preloader from "./components/Preloader";
 
 
 const geistSans = Geist({
@@ -38,6 +39,7 @@ export default function RootLayout({
         <body className={geist.className}>
         <main className="min-h-screen bg-[#050816] text-white">
           <div className="mx-auto max-w-7xl px-4">
+            <Preloader/>
             <Navbar />
             {children}
             <ScrollTop/>
