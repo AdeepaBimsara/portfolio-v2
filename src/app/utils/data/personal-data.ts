@@ -8,7 +8,7 @@ export const personalData: PersonalData = {
   email: 'adeepabimsara6@gmail.com',
   phone: '+094719242615',
   address: 'Kaluthara,Dodangoda',
-  github: '',
+  github: 'https://github.com/AdeepaBimsara',
   facebook: '',
   linkedIn: '',
   twitter: '',

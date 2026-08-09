@@ -11,6 +11,8 @@ import { SiLeetcode } from "react-icons/si";
 import { TypeAnimation } from "react-type-animation";
 
 export const Hero = () => {
+
+
   return (
     <section className="relative overflow-hidden py-10 lg:py-30">
        <Image
@@ -53,7 +55,7 @@ export const Hero = () => {
             </span>
           </h1>
 
-          <div className="my-12 flex items-center gap-5">
+          <div className="relative my-12 flex items-center gap-5">
             <Link
               href={personalData.github}
               target="_blank"
@@ -94,16 +96,16 @@ export const Hero = () => {
           <div className="flex items-center gap-3">
             <Link
               href="#contact"
-              className="bg-linear-to-r to-pink-500 from-violet-600 p-px rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600"
+              className="relative cursor-pointer bg-linear-to-r to-pink-500 from-violet-600 p-px rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600"
             >
-              <button className="px-3 text-xs md:px-8 py-3 md:py-4 bg-[#0d1224] rounded-full border-none text-center md:text-sm font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-out  md:font-semibold flex items-center gap-1 hover:gap-3">
+              <span className="px-3 text-xs md:px-8 py-3 md:py-4 bg-[#0d1224] rounded-full border-none text-center md:text-sm font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-out  md:font-semibold flex items-center gap-1 hover:gap-3">
                 <span>Contact me</span>
                 <RiContactsFill size={16} />
-              </button>
+              </span>
             </Link>
 
             <Link
-              className="flex items-center gap-1 hover:gap-3 rounded-full bg-linear-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
+              className="relative flex items-center gap-1 hover:gap-3 rounded-full bg-linear-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
               role="button"
               target="_blank"
               href={personalData.resume}
@@ -208,7 +210,7 @@ export const Hero = () => {
             </code>
           </div>
         </div>
-        </div>
+      </div>
     </section>
   );
 };

@@ -23,7 +23,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div>
+    <div id="projects">
       {/* Gradient Divider */}
       <div className="flex justify-center -translate-y-px">
         <div className="w-3/4">
