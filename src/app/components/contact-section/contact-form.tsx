@@ -81,7 +81,7 @@ function ContactForm() {
       setIsLoading(true);
 
       await axios.post(
-        `${process.env.NEXT_PUBLIC_APP_URL}/api/contact`,
+        `/api/contact`,
         userInput
       );
 

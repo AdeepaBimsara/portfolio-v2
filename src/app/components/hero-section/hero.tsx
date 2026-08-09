@@ -14,7 +14,7 @@ export const Hero = () => {
 
 
   return (
-    <section className="relative overflow-hidden py-10 lg:py-30">
+    <section className="relative overflow-hidden py-20 lg:py-30">
        <Image
         src="/hero.svg"
         alt="Hero"
