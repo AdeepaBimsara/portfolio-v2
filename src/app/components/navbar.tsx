@@ -17,7 +17,7 @@ export const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="flex items-center justify-between px-110 py-4 md:px-8">
+        <div className="flex items-center justify-between px-4 py-4 md:px-8">
           <button
             type="button"
             onClick={() => setIsOpen(!isOpen)}
